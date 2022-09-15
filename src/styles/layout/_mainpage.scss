@@ -1,0 +1,97 @@
+.servers-nav-container {
+  flex-direction: column;
+  background-color: $color-dark;
+  width: 70px;
+  height: 100vh;
+
+  .server-button {
+    width: 75%;
+    aspect-ratio: 1;
+    margin: 5px auto;
+    border-radius: 50%;
+
+    background-color: $color-light;
+    border: none;
+
+    transition: background-color .25s, border-radius .25s;
+
+    position: relative;
+
+    .server-button-image {
+      width: 45%;
+
+    }
+
+    .discord-button-image {
+      width: 65%;
+    }
+  }
+
+  .server-button:before {
+    content: attr(data-text);
+    position: absolute;
+
+    /* vertically center */
+    top: 50%;
+    transform: translateY(-50%);
+
+    /* move to right */
+    left: 100%;
+    margin-left: 15px;
+    /* and add a small left margin */
+
+    /* basic styles */
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+
+    /*Stay on one Line */
+    overflow: hidden;
+    white-space: nowrap;
+
+    display: none;
+    /* hide by default */
+  }
+  
+  .server-button:after {
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left:100%;
+    margin-left:-5px;
+   
+    /* vertically center */
+    top:50%;
+    transform:translateY(-50%);
+   
+    /* the arrow */
+    border:10px solid #000;
+    border-color: transparent black transparent transparent;
+    
+    display:none;
+  }
+
+  .server-button:hover:before, .server-button:hover:after{
+    display:block;
+  }
+
+  .server-button:hover {
+    border-radius: 15px;
+    background-color: $color-green;
+  }
+
+  .line-break {
+    width: 40%;
+    height: 2px;
+    background-color: $color-gray;
+    border: none;
+  }
+
+}
+
+body {
+  background-color: $color-light;
+}
