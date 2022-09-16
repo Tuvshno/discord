@@ -44,7 +44,7 @@
     padding: 10px;
     border-radius: 10px;
     background: #000;
-    color: #fff;
+    color: rgb(230, 230, 230);
     text-align: center;
 
     /*Stay on one Line */
@@ -72,6 +72,8 @@
     border-color: transparent black transparent transparent;
     
     display:none;
+
+    transition: 1s ease-in-out;
   }
 
   .server-button:hover:before, .server-button:hover:after{
@@ -80,7 +82,7 @@
 
   .server-button:hover {
     border-radius: 15px;
-    background-color: $color-green;
+    background-color: $color-green; 
   }
 
   .line-break {
@@ -90,8 +92,4 @@
     border: none;
   }
 
-}
-
-body {
-  background-color: $color-light;
 }

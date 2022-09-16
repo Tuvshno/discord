@@ -9,19 +9,13 @@ import discord_white from '../assets/discord-white.png'
 import download_green from '../assets/download-green.png'
 import download_white from '../assets/download-white.png'
 
-function Home() {
+function Servers() {
 
   /*Button Hover State */
   const [discord, setDiscord] = useState(discord_gray)
   const [plus, setPlus] = useState(plus_green)
   const [explore, setExplore] = useState(explore_green)
   const [download, setDownload] = useState(download_green)
-
-  /*Tool Tip State */
-  const [discordToolTip, setDiscordToolTip] = useState(false)
-  const [plusToolTip, setPlusToolTip] = useState(false)
-  const [exploreToolTip, setExploreToolTip] = useState(false)
-  const [downloadToolTip, setDownloadToolTip] = useState(false)
 
   /* On Server Button Hover */
   const discordHoverEnter = () => {
@@ -61,7 +55,7 @@ function Home() {
     <div>
       <div class="servers-nav-container flex">
         <button class="server-button discord-button" data-text="Direct Messages" onMouseEnter={discordHoverEnter} onMouseLeave={discordHoverLeave}>
-          <img class="discord-button-image" src={discord} />
+          <img class="discord-button-image" src={discord} alt="discord"/>
         </button>
 
         <hr class="line-break"/>
@@ -83,4 +77,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Servers

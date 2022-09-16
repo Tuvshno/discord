@@ -1,4 +1,25 @@
-button {
+* {
   font-family: $font;
+}
+
+.server-button:before {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.large-button {
+  font-size: 15px;
+  font-weight: 500;
+
+  span {
+    color: white;
+  }
   
 }
+
+.direct-messages-title {
+  color: $color-gray-text;
+  font-size: 14px;
+  font-weight: 600;
+}
+

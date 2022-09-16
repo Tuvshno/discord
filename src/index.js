@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './styles/main.css';
 import reportWebVitals from './reportWebVitals';
 
-import Home from './Components/Home'
-
+import Servers from './Components/Servers'
+import Friends from './Components/Friends'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div>
-    <Home />
+  <div class="main-container">
+    <Servers />
+    <Friends />
   </div>
 
 );

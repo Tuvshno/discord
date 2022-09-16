@@ -1,0 +1,102 @@
+.friends-container {
+  width: 240px;
+  height: 100vh;
+
+  padding: .6rem;
+
+  background-color: $color-accent;
+}
+
+.friend-search-button {
+  width: 100%;
+  height: 1.75rem;
+  border: none;
+  border-radius: 5px;
+
+  padding: 5px;
+  text-align: left;
+
+  color: $color-gray-text;
+
+  background-color: $color-dark;
+
+}
+
+.line-break-header {
+  position: fixed;
+
+  margin-left: -15px;
+  width: 100%;
+  height: 1px;
+  background-color: $color-dark;
+  border: none;
+}
+
+.friend-container-buttons {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.large-button-container {
+  width: 100%;
+
+  .large-button {
+    width: 100%;
+    height: 2.5rem;
+
+    border: none;
+    border-radius: 8px;
+
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+
+    background-color: transparent;
+
+    .button-img {
+      width: 20px;
+      margin: auto;
+      margin-left: 5px;
+    }
+
+    span {
+      color: $color-gray-text;
+
+      width: 85%;
+      align-self: center;
+      text-align: left;
+      margin-left: 5px;
+      padding-left: 10px;
+    }
+  }
+
+  .large-button-active {
+    background-color: rgb(66, 70, 77);
+
+    span {
+      color: white
+    }
+  }
+}
+
+.direct-messages-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.direct-messages-title {
+  padding-left: 5px;
+}
+
+.small-button {
+  background-color: transparent;
+  border: none;
+  
+
+  .small-button-image {
+    width: 12px;
+  }
+}
