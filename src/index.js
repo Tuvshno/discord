@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './styles/main.css';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './styles/main.css'
+import reportWebVitals from './reportWebVitals'
 
-import Servers from './Components/Servers'
-import Friends from './Components/Friends'
+import App from './Components/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <div class="main-container">
-    <Servers />
-    <Friends />
+  <div>
+    <App />
   </div>
+
 
 );
 
